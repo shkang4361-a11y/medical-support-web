@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>추천 결과</h2>
+
+{% if result %}
+<ul>
+{% for r in result %}
+<li>{{ r }}</li>
+{% endfor %}
+</ul>
+{% else %}
+<p>해당되는 지원 제도가 없습니다.</p>
+{% endif %}
+
+<a href="/">다시 입력</a>
+</body>
+</html>

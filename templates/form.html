@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>의료비 지원 추천</h2>
+
+<form action="/result" method="post">
+소득 수준:
+<select name="income">
+  <option value="1">기초생활수급</option>
+  <option value="2">중위소득 120% 이하</option>
+  <option value="3">중위소득 150% 이하</option>
+</select><br><br>
+
+질병 유형:
+<select name="disease">
+  <option value="암">암</option>
+  <option value="희귀질환">희귀질환</option>
+  <option value="중증질환">중증질환</option>
+</select><br><br>
+
+<button type="submit">추천받기</button>
+</form>
+
+</body>
+</html>
